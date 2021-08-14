@@ -1,0 +1,602 @@
+/*  ================================
+        global area start
+    ================================ */
+
+body {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+    color: #1a1a1a;
+}
+
+a,
+a:hover,
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+.main-div {
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*  ================================
+        global area end
+    ================================ */
+
+/*  ================================
+        header area start
+    ================================ */
+
+.header-top {
+    overflow: hidden;
+    background-color: #3052BA;
+}
+
+.wel-come h4 {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+
+.wel-come {
+    padding: 20px 0;
+    font-weight: 600;
+}
+
+.menu-top {
+    text-align: right;
+}
+
+.menu-top ul {
+    display: inline-block;
+}
+
+.menu-top li {
+    list-style: none;
+    display: inline-block;
+    padding: 18px 0 0;
+}
+
+.menu-top li a {
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 14px;
+    transition: 0.5s;
+    font-weight: 800;
+}
+
+.menu-top li a:hover {
+    color: #fff;
+}
+
+.menu-area {
+    margin: 30px 0 80px;
+    border-bottom: 1px solid #DFDFDF;
+}
+
+.logo img{
+    width: 250px;
+}
+
+/*======================== Menu Design ==================*/
+
+#menu-switcher,
+.navbar-header > label,
+.switch {
+    display: none;
+}
+
+.menu-container label::before {
+    border-bottom: 2px solid #000;
+    box-shadow: 0 5px 0 0 #000, 0 0 0 0 inset, 0 -5px 0 0 #000;
+    content: "";
+    height: 0;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -1px;
+    position: absolute;
+    top: 50%;
+    width: 20px;
+}
+
+.switch {
+    width: 100%;
+    float: left;
+    height: auto;
+    min-height: 45px;
+    position: relative;
+}
+
+.menu-container label {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+    cursor: pointer;
+    display: none;
+    height: 35px;
+    padding: 0;
+    position: absolute !important;
+    right: 0;
+    top: 4px;
+    width: 40px;
+    z-index: 9999;
+    border: 1px solid #000;
+}
+
+#navbar ul {
+    text-align: center;
+    margin: 30px 0 15px;
+}
+
+#navbar ul li {
+    display: inline-block;
+    list-style: outside none none;
+}
+
+#navbar ul li a {
+    font-size: 16px;
+    color: #000;
+    line-height: 25px;
+    display: inline-block;
+    margin: 0 10px;
+    text-transform: capitalize;
+    transition: 0.5s;
+    position: relative;
+    padding: 0 0 10px;
+    font-style: italic;
+}
+
+#navbar ul li a::before {
+    left: 50%;
+    bottom: 0;
+    right: 50%;
+    position: absolute;
+    content: '';
+    height: 1px;
+    background: #000;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#navbar ul li a:hover::before {
+    left: 0;
+    right: 0;
+}
+
+#navbar ul li a i.fa {
+    margin-right: 5px;
+}
+
+/* menu part end */
+
+/*  ================================
+        header area end
+    ================================ */
+
+/*  ================================
+        product title area start
+    ================================ */
+
+.pro-title {
+    background-color: #FD6ABA;
+    border-radius: 5px;
+    padding: 15px 30px;
+    margin: 0 0 30px;
+    text-align: center;
+}
+
+.pro-title h3 {
+    color: #000;
+    font-size: 22px;
+    display: inline-block;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+/*  ================================
+        product title area end
+    ================================ */
+.feature-pro-area h3{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.single-pro h2{
+    color: #000;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.single-pro:hover.single-pro a img{
+    opacity: 0.9
+}
+
+.single-pro:hover.single-pro a h2{
+    text-decoration: underline;
+}
+
+.single-pro a p{
+    color: #000;
+}
+
+.sub a{
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 3px 30px;
+    text-transform: uppercase;
+    color: #000;
+    margin-top: 30px;
+}
+/*  ================================
+        product area start
+    ================================ */
+
+.dec-title {
+    margin: 30px 0 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.product-dec h3 {
+    font-family: 'Raleway', sans-serif;
+    color: #000;
+    text-transform: capitalize;
+    font-size: 22px;
+    margin: 30px 0 10px;
+    font-weight: 600;
+}
+
+.product-dec h3:first-child{
+    margin-top: 0;
+}
+
+.product-dec h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #000;
+    font-size: 20px;
+    line-height: 1.3;
+    margin: 20px 0 10px;
+    text-transform: capitalize;
+}
+
+.product-dec ul {
+    margin-bottom: 30px;
+}
+
+.product-dec ul,
+.tab-list ul {
+    margin: 0 0 10px;
+}
+
+.product-dec ul li,
+.tab-list ul li {
+    list-style: none;
+    padding: 5px 20px;
+    position: relative;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.product-dec ul li::before,
+.tab-list ul li::before,
+.sidebar-box ul li::before {
+    position: absolute;
+    content: "\f046";
+    font-family: fontawesome;
+    left: 0;
+    color: #000;
+}
+
+.tl {
+    text-align: left !important;
+}
+
+/*  ================================
+        product area end
+    ================================ */
+
+/*  ================================
+        tab area start
+    ================================ */
+
+.tab-part-area {
+    padding: 80px 0 50px;
+}
+
+section.tab-section {
+    display: none;
+    padding: 40px 45px;
+    border: 1px solid #ddd;
+    color: #1a1a1a;
+    overflow: hidden;
+}
+
+.tab-part-area input {
+    display: none;
+}
+
+.tab-part-area label {
+    color: #1a1a1a;
+    font-size: 15px;
+    font-weight: 700;
+    border: 1px solid transparent;
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 10px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #F8F8FA;
+    border: 1px solid #ddd;
+    font-family: 'Open Sans', sans-serif;
+    transition: 0.5s;
+}
+
+.tab-part-area label:hover {
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #6C6A36;
+    background-color: #6C6A36;
+}
+
+.tab-part-area input:checked + label {
+    color: #fff;
+    border: 1px solid #6C6A36;
+    background-color: #6C6A36;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5 {
+    display: block;
+}
+
+.tab-section p a {
+    color: #000;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/*  ================================
+        tab area end
+    ================================ */
+
+/*  ================================
+        footer area start
+    ================================ */
+
+.footer-top {
+    padding: 30px 0;
+    margin-top: 80px;
+}
+
+.footer-widget h2 {
+    padding: 0 0 20px;
+    text-transform: capitalize;
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.footer-widget p {
+    margin: 0 0 20px;
+    line-height: 18px;
+}
+
+.footer-widget ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-widget ul li {
+    margin-bottom: 15px;
+    list-style: none;
+    text-transform: capitalize;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.footer-widget ul li a {
+    margin: 0 10px 0 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.5s;
+    color: #000;
+    font-size: 14px;
+    font-style: italic;
+    display: inline-block;
+}
+
+.footer-widget ul li a:hover {
+    text-decoration: underline;
+}
+
+.sub-btn {
+    border: 1px solid #000;
+    color: #000;
+    text-transform: uppercase !important;
+    padding: 3px 30px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 0 !important;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.sub-btn:focus,
+.sub-btn:hover {
+    color: #000;
+}
+
+.main-footer {
+    margin-top: 50px;
+    padding: 20px 0;
+    border-top: 1px solid #DFDFDF;
+}
+
+.copy-right p a {
+    color: #000;
+}
+.copy-right p a:hover{
+    text-decoration: underline;
+}
+
+.copy-right p {
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+}
+
+/*  ================================
+        footer area end
+    ================================ */
+
+/***** medium Layout *****/
+
+@media (min-width: 992px) and (max-width: 1200px) {}
+
+/***** Tablet Layout *****/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .tab-part-area label {
+        padding: 10px 20px;
+    }
+
+    .product-dec {
+        margin-top: 50px;
+    }
+
+}
+
+/***** Mobile Layout *****/
+
+@media only screen and (max-width: 767px) {
+    .menu-area {
+        margin: 30px 0;
+    }
+
+    /* menu start */
+    .navbar-header > label,
+    .switch,
+    .menu-container label {
+        display: block;
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    #menu-switcher:checked + #navbar {
+        display: block;
+        padding: 15px 0;
+    }
+
+    .menu-container {
+        float: left;
+        width: 100%;
+    }
+
+    #navbar ul {
+        width: 100% !important;
+        margin: 0;
+    }
+
+    #navbar ul li {
+        width: 100%;
+        float: left;
+        margin: 0 !important;
+        text-align: left;
+    }
+
+    #navbar ul li a {
+        color: #fff;
+        display: block;
+        padding: 10px 0;
+        margin: 0 20px;
+    }
+
+    #navbar {
+        width: 100%;
+        float: left;
+        height: auto;
+        position: absolute;
+        top: 70px;
+        z-index: 999;
+        left: 0;
+        background-color: rgba(0, 0, 0, .9);
+    }
+
+    /* menu end */
+    .tab-part-area {
+        padding: 30px 0;
+    }
+
+    .feature-pro-area h3 {
+        font-size: 20px;
+    }
+
+    .sub a {
+        margin: 0;
+    }
+
+    .single-pro {
+        margin-bottom: 30px;
+    }
+
+    .footer-top {
+        margin-top: 0;
+    }
+
+    .product-dec {
+        margin-top: 30px;
+    }
+
+    .tab-area label {
+        width: 100%;
+    }
+
+    section.tab-section {
+        padding: 30px 10px;
+    }
+
+    .footer-widget {
+        margin-bottom: 30px;
+    }
+    .main-footer,
+    .copy-right {
+        text-align: center;
+    }
+}
+
+/***** Wide Mobile Layout *****/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
